@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Gallery Parkssam</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #FFFCEF; /* Ivory Cream */
       color: #659BB9;       /* Vintage Denim */
       display: flex;
@@ -14,62 +16,76 @@
 
     /* Sidebar navigation */
     nav {
-      width: 200px;
-      background: #fdf7e8; /* slightly darker ivory shade for contrast */
+      width: 220px;
+      background: #fdf7e8; /* slightly darker ivory for contrast */
       height: 100vh;
       padding-top: 30px;
-      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+      box-shadow: 2px 0 8px rgba(0,0,0,0.08);
       position: fixed;
       top: 0;
       left: 0;
     }
 
     nav h1 {
-      font-size: 1.5em;
+      font-size: 1.4em;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       color: #659BB9;
+      font-weight: 700;
     }
 
     nav a {
       display: block;
-      padding: 12px 20px;
+      padding: 12px 25px;
       color: #659BB9;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+      transition: all 0.2s ease;
     }
 
     nav a:hover {
       background: #659BB9;
       color: #FFFCEF;
+      border-radius: 0 20px 20px 0;
     }
 
     /* Main content area */
     .content {
-      margin-left: 200px;
+      margin-left: 220px;
       padding: 40px;
       flex: 1;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
+      margin-top: 20px;
     }
 
     .gallery img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
     }
 
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 60px;
       padding: 20px;
       font-size: 0.9em;
       color: #659BB9;
+    }
+
+    section h2 {
+      font-weight: 600;
+      margin-bottom: 10px;
     }
   </style>
 </head>
