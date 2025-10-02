@@ -7,11 +7,9 @@
     body {
       margin: 0;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background: #F7F4EA; /* Ivory */
-      color: #17153B;      /* Deep navy */
+      background: #F7F4EA; 
+      color: #17153B;
     }
-
-    /* Header with logo + navigation */
     header {
       display: flex;
       justify-content: space-between;
@@ -19,50 +17,43 @@
       padding: 20px 40px;
       border-bottom: 1px solid rgba(23,21,59,0.1);
     }
-
     header h1 {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      font-weight: 700; /* Bold title font */
+      font-weight: 700;
       font-size: 1.8em;
       margin: 0;
       color: #17153B;
       letter-spacing: 1px;
     }
-
     nav a {
       margin-left: 30px;
       text-decoration: none;
       color: #17153B;
-      font-weight: 300; /* Light font */
+      font-weight: 300;
       font-size: 0.95em;
-      text-transform: uppercase; /* Fashion style */
+      text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
-    nav a:hover {
-      text-decoration: underline;
+    nav a:hover { text-decoration: underline; }
+    main {
+      text-align: center;
+      padding: 80px 20px;
     }
-
-    /* Image grid */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 40px;
+    main h2 {
+      font-weight: 500;
+      font-size: 1.5em;
+      margin-bottom: 10px;
     }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
+    main p {
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
-
     footer {
       text-align: center;
       padding: 30px;
       font-size: 0.85em;
       font-weight: 300;
-      color: #17153B;
       border-top: 1px solid rgba(23,21,59,0.1);
     }
   </style>
@@ -73,18 +64,19 @@
     <h1>GALLERY PARKSSAM</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="#gallery">Gallery</a>
+      <a href="gallery.html">Gallery</a>
       <a href="information.html">Information</a>
       <a href="about.html">About</a>
     </nav>
   </header>
 
-  <section id="gallery" class="gallery">
-    <img src="images/2025photo1.jpeg" alt="Photo 1">
-    <img src="images/2025photo2.jpeg" alt="Photo 2">
-    <img src="images/2025photo3.jpeg" alt="Photo 3">
-    <!-- Add more photos here if needed -->
-  </section>
+  <main>
+    <h2>Welcome</h2>
+    <p>
+      This is the homepage of Gallery Parkssam.  
+      Browse the latest collection by visiting the <strong>Gallery</strong>.
+    </p>
+  </main>
 
   <footer>
     &copy; 2025 Gallery Parkssam
